@@ -10,7 +10,7 @@
                 <tr *ngFor="let proyectos of proyectos">
                     <td><h2>{{proyectos.nombre}}</h2></td>
                     <td>{{proyectos.descripcion}}</td>
-                    <td><a href={{proyectos.link}}><p>Ver proyecto...</p></a></td>
+                    <td><a href={{proyectos.link}} target="_blank"><p>Ver proyecto...</p></a></td>
                     <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editproyecto/{{proyectos.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button></td>
                     <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(proyectos.id)"><i class="bi bi-trash-fill"></i>BORRAR</button></td>
                 </tr>
@@ -18,51 +18,3 @@
         </table>
     </div>
 </div>
-<!--        
-    <div class="col-sm-12 col-md-7 col-lg-7 texto">
-            <h2>Cronometro</h2>
-            <p>Fecha de realización: 19/09/2022</p>
-            <p>Se imita el funcionamiento de un cronometro convencional</p>
-            <p>Presione la imagen para ver el proyecto...</p>
-        </div> 
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen">
-            <a href="https://codepen.io/nicolastapia18/pen/PoBqXEj" target="_blank"><img src="../../../assets/cronometro.png" class="img-fluid imagen-proyecto"></a>
-        </div>
-    <div class="col-sm-12 col-md-7 col-lg-7 texto">
-            <h2>Contador de palabras y caracteres</h2>
-            <p>Fecha de realización: 20/09/2022</p>
-            <p>Proyecto en el que se escribe un texto y se informa cuantas palabras y caracteres contiene el mismo</p>
-            <p>Presione la imagen para ver el proyecto...</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen">
-            <a href="https://codepen.io/nicolastapia18/pen/oNMXJoj" target="_blank"><img src="../../../assets/contador.png" class="img-fluid imagen-proyecto"></a>
-        </div>
-        <div class="col-sm-12 col-md-7 col-lg-7 texto">
-            <h2>Generador de Contraseñas</h2>
-            <p>Fecha de realización: 02/11/2022</p>
-            <p>Se elije el formato que se desee que tenga la contraseña (mayúsculas, minúsculas, numeros, simbolos, cantidad de caracteres) y se generara la misma</p>
-            <p>Presione la imagen para ver el proyecto...</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen">
-            <a href="https://codepen.io/nicolastapia18/pen/YzjXdrq" target="_blank"><img src="../../../assets/contraseña.png" class="img-fluid imagen-proyecto"></a>
-        </div>
-        <div class="col-sm-12 col-md-7 col-lg-7 texto">
-            <h2>Tetris</h2>
-            <p>Fecha de realización: 03/12/2022</p>
-            <p>Imitación del iconico juego de los 80s</p>
-            <p>Presione la imagen para ver el proyecto...</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen">
-            <a href="https://codepen.io/nicolastapia18/details/PoBqXQj" target="_blank"><img src="../../../assets/tetris.png" class="img-fluid imagen-proyecto"></a>
-        </div>
-        <div class="col-sm-12 col-md-7 col-lg-7 texto">
-            <h2>Portfolio</h2>
-            <p>Fecha de realización: 10/12/2022</p>
-            <p>Presentacion de mi persona donde se muestran mi experiencia, estudios, proyectos, entre otros</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen">
-            <a href="" target="_blank"><img src="../../../assets/portfolio.png" class="img-fluid imagen-proyecto"></a>
-        </div>
-    </div>
-</div>
--->
