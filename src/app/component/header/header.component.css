@@ -1,0 +1,10 @@
+.row{
+    background-color: indigo;
+    margin: 0rem;
+}
+
+app-social{
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+}

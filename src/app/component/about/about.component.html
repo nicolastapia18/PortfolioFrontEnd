@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../../assets/fotodeperfil.png" class="img-fluid" id="fotoperfil" *ngIf="isLogged">
+        <button type="button" class="btn btn-primary" routerLink="/editabout/1" *ngIf="isLogged">Editar perfil</button>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngIf="isLogged">
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <p>Full Stack Developer Jr.</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngIf="isLogged">
+        <span>
+            <h1>Acerca de mi</h1>
+            <p>{{persona.descripcion}}</p>
+        </span>
+    </div>
+</div>

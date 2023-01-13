@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+}
+
+img{
+    width: 50px;
+}
+
+button{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-width: medium;
+}
+
+a > img{
+    margin-left: 0.3em;
+}
+
+a > img:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
+    
+    .redes{
+        display: flex;
+        align-items: center;
+    }
+}

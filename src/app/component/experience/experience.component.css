@@ -1,0 +1,21 @@
+.row{
+    padding: 20px;
+    margin: 0rem;
+}
+
+div{
+    background-color: rgb(67, 2, 114);
+    color: lightgray;
+}
+
+td{
+    color: lightgray;
+}
+
+h1, h3{
+    display: inline;
+}
+
+h1{
+    text-decoration: underline;
+}
