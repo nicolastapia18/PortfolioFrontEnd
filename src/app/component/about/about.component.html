@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/fotodeperfil.png" class="img-fluid" id="fotoperfil">
+        <img src="../../../assets/fotodeperfil.png" class="img-fluid" id="fotoperfil" *ngIf="isLogged">
         <button type="button" class="btn btn-primary" routerLink="/editabout/1" *ngIf="isLogged">Editar perfil</button>
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngIf="isLogged">
